@@ -1,0 +1,132 @@
+<div class="conteiner">
+    <header class="header">
+        <h1 id="title" class="text-center"> Encuesta tramite  Banco X____X</h1>
+        <p id="description" class="description text-center">
+            Gracias por tomarse el tiempo en ayudarnos a mejorar esta plataforma
+        </p>
+    </header>
+    <form id="survey-form">
+        <div class="form-group">
+            <label id="name-label" for="name">Nombre y Apellido</label>
+            <input type="text" name="name" id="name" class="form-control" 
+            placeholder="Ingrese su nombre y apellido" required />
+        </div>
+        <div class="form-group">
+            <label id="dni-label" for="dni">DNI</label>
+            <input type="number" name="dni" id="dni" class="form-control" 
+            placeholder="Ingrese su numero de DNI" required />
+        </div>
+        <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input type="email" name="email" id="email" class="form-control" 
+            placeholder="Ingrese su Email" required />
+        </div>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-client" id="es_cliente">
+            <label class="form-check-label" for="es_cliente">Indique si es cliente del Banco X__X ?</label>
+        </div>
+        <div class="form-group" required>
+            <p>Recomendaria el servicio del Banco a un conocido?</p>
+            <label>
+                <input name="user-recomed"
+                value="definitivamente"
+                type="radio"
+                class="input-radio"
+                checked /> Definitivamente
+            </label>
+            <label>
+                <input name="user-recomed"
+                value="Quizas"
+                type="radio"
+                class="input-radio"
+                 /> Quizas
+            </label>
+
+            <label>
+                <input name="user-recomed"
+                value="No_lo_recomendaria"
+                type="radio"
+                class="input-radio"
+                 /> No lo recomendaria
+            </label>
+            <div class="form-group">
+                <label id="not-recomend-label" for="not-recomend">En caso de negativo, indique el motivo:</label>
+                <input type="text" name="not-recomend" id="not-recomend" class="form-control" 
+                placeholder="Ingrese su motivo"/>
+            </div>    
+        </div>
+        <div class="form-group">
+            <p>Cual de estas opciones describe su relacion laboral?</p>
+            <select id="dropdown" name="role" class="form-control" required>
+                <option disabled selected value="">Seleccione su actual situacion laboral</option>
+                <option value="Relacion_de_depedencia">Relacion de depedencia</option>
+                <option value="Monotrobutista_Autonomo">Monotrobutista / Autonomo</option>
+                <option value="Dep_mono">Relacion de depedencia y Monotributo</option>
+                <option value="Jub_Pen">Jubilado / Pensionado</option>
+                <option value="Plan_social">Plan social</option>
+                <option value="Estudiante_Beca">Estudiante / Beca</option>
+            </select>
+        </div>
+        <div class="form-group" required>
+            <p>Indique que productos posee contratados:
+                <span class="clue">(Marque todos los que apliquen)</span>
+            </p>
+            <label>
+                <input name="product"
+                value="CA$"
+                type="checkbox"
+                class="input-checkbox"/> Caja de Ahorro en $
+            </label>
+            <label>
+                <input name="product"
+                value="CAUSD"
+                type="checkbox"
+                class="input-checkbox"/> Caja de Ahorro en USD
+            </label>
+            <label>
+                <input name="product"
+                value="TC"
+                type="checkbox"
+                class="input-checkbox"/> Tarjetas de Credito
+            </label>
+            <label>
+                <input name="product"
+                value="Inversiones"
+                type="checkbox"
+                class="input-checkbox"/> Inversiones
+            </label>
+            <label>
+                <input name="product"
+                value="FCI"
+                type="checkbox"
+                class="input-checkbox"/> Fondo Comun de Inversion
+            </label>
+            <label>
+                <input name="product"
+                value="PP"
+                type="checkbox"
+                class="input-checkbox"/> Prestamo Personal
+            </label>
+            <label>
+                <input name="product"
+                value="PH"
+                type="checkbox"
+                class="input-checkbox"/> Prestamo Hipotecario
+            </label>
+        </div>
+        <div class="form-group">
+            <p>Algun comentario o sugerencia?</p>
+            <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Ingrese su comentario aqui..."></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+                Enviar
+            </button>
+        </div>
+    </form>   
+  </div>
+  
